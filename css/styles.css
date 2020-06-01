@@ -251,6 +251,7 @@ button:hover, button:focus {
 
 .skill__image {
   margin: 10px;
+  width: 300px;
   box-shadow: var(--box-shadow);
 }
 
