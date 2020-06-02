@@ -208,7 +208,7 @@ button:hover, button:focus {
   padding: 5%;
 }
 
-.about-container__item2 {
+.about-container__left-rectangle {
   background: rgb(119,179,178);
   background: linear-gradient(180deg, rgba(119,179,178,0.9374124649859944) 1%, rgba(18,99,98,0.8057598039215687) 100%);
   box-shadow: var(--box-shadow);
@@ -457,10 +457,6 @@ textarea {
 /* Moved Media Queries to end, and condensed code */
 
 @media all and (min-width: 0px) and (max-width: 1150px) {
-  .about-container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
   .about-container {
     display: grid;
     grid-template-columns: 1fr;
