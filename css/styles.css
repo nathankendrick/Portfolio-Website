@@ -132,24 +132,6 @@ a:active {
   text-align: center;
 }
 
-.navigation-list {
-  list-style-type: none;
-}
-
-.navigation-list__item {
-  font-size: 20px;
-}
-
-.navigation-list li {
-  display: inline-block;
-  margin-left: 20px;
-  padding: 10px;
-}
-
-.navigation-list__item--active {
-  text-decoration: none;
-}
-
 .hero {
   padding-bottom: 20px;
   padding-top: 80px;
