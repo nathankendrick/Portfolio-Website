@@ -1,0 +1,48 @@
+Chrome: Version 83.0.4103.61 (Official Build) (64-bit)
+
+No issues found.
+
+
+
+Safari: Version 13.1.1 (15609.2.9.1.2)
+
+No smooth scrolling animation.
+
+No fix required at this time: can be accomplished with Javascript only in Safari. I think it's worth keeping for the browsers that do support it, and it isn't vital for those that don't.
+
+
+
+Microsoft Edge: Version 83.0.478.45 (Official build) (64-bit)
+
+No issues found.
+
+
+
+Firefox: 76.0.1 (64-bit)
+
+No issues found.
+
+
+
+Safari (Mobile):
+
+Menubar not centering, cut off slightly on right side.
+(Fixed: Set a Media Query for the menu-button to drop min-width requirement, and to adjust title text font size)
+
+
+Edge (Mobile):
+
+Menubar not centering, cut off slightly on right side.
+(Fixed: Set a Media Query for the menu-button to drop min-width requirement, and to adjust title text font size)
+
+
+Chrome (Mobile):
+
+Menubar not centering, cut off slightly on right side.
+(Fixed: Set a Media Query for the menu-button to drop min-width requirement, and to adjust title text font size)
+
+
+
+
+
+
