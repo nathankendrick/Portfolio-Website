@@ -94,6 +94,7 @@ a:active {
   position: fixed;
   top: 0;
   z-index: 2;
+  margin: 0 auto;
 }
 
 .title-text {
@@ -104,10 +105,6 @@ a:active {
   font-weight: 900;
   text-shadow: 3px 4px 0px #495464;
   padding: 10px;
-}
-
-.page-header__item {
-  flex: 0 1 200px;
 }
 
 .main-navigation {
@@ -125,11 +122,6 @@ a:active {
   width: 100%;
   background: rgb(60,193,200);
   background: linear-gradient(180deg, rgba(60,193,200,0.9094012605042017) 2%, rgba(63,170,146,0.7749474789915967) 100%);
-}
-
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: center;
 }
 
 .hero {
@@ -396,7 +388,7 @@ button:hover, button:focus {
 .standard-label {
   width: 100%;
   padding: 10px;
-  margin: o auto;
+  margin: 0 auto;
   box-sizing: border-box;
   
 }
@@ -459,7 +451,16 @@ textarea {
     font-size: 24px;
   }
   .page-header {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
+  }
+  .navigation-links {
+    width: 100%;
+  }
+  .menu-button {
+    padding: 3px;
+    border-radius: 5px;
+    min-width: 0px;
+    min-height: 40px;
   }
   .profile__portrait {
     width: 90%;
@@ -468,12 +469,17 @@ textarea {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    }
+  }
   .profile__photo {
     text-align: center;
   }
   .title-text {
     text-align: center;
+    font-size: 28px;
+    text-shadow: 2px 3px 0px #495464;
+  }
+  .menu-button {
+    font-size: 14px;
   }
   .grid {
     grid-template-columns: 1fr;
