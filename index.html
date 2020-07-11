@@ -188,16 +188,16 @@
                     <a href="mailto:nathan.kendrick@twc.com" class="contact__link">nathan.kendrick@twc.com</a>
                 </div>
                 <div class="form-container">
-                    <!-- form action is set to a non-existent action to pass code validation, functionality will be added later -->
-                    <form action="null.php" method="post" id="contact-form" class="styled-form">
+                    <!-- full functionality will be added later -->
+                    <form action="submit" method="post" id="contact-form" class="styled-form">
                             <div>
                                     <label class="standard-label" for="contact-email">E-mail: </label>
-                                    <input type="email" id="contact-email">  
+                                    <input type="email" id="contact-email" required>  
                             </div>
                             <br>
                             <div>
                                 <label class="standard-label" for="contact-tel">Telephone: </label>
-                                <input type="tel" id="contact-tel">
+                                <input type="tel" id="contact-tel" required>
                             </div>
                             <br>
                             <div>
@@ -223,6 +223,7 @@
             </footer>
         </div>
     </div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
 
