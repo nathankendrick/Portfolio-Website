@@ -634,8 +634,12 @@ textarea {
   .grid {
     grid-template-columns: 1fr;
   }
+  .skills-container {
+    padding: 10px;
+  }
   .skill__image {
-    width: 150px;
+    width: 100px;
+    margin: 0px;
   }
   .contact-container {
     background-attachment: initial;
