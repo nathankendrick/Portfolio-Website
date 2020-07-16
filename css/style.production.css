@@ -714,7 +714,7 @@ textarea {
     font-size: 24px;
   }
   .parallax-header {
-    height: 400px;
+    height: 320px;
     background-position: top;
     background-size: 120%;
     -webkit-transition-duration: 1200ms;
@@ -764,6 +764,18 @@ textarea {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+  .skill__image {
+    width: 150px;
+  }
+  .contact-container {
+    background-attachment: initial;
+    background-position: bottom;
+    background-size: 170%;
+  }
+  .contact-container:hover {
+    background-position: bottom;
+    background-size: 170%;
   }
   .contact-card {
     width: 100%;
