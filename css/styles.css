@@ -1,15 +1,6 @@
-/* Main Colors Used
-
-Text Color (Darker Teal):#101216
-Alt Text (White): #FFFFFF
-Primary Color (Teal): #106A74
-Secondary Color (Fuchsia/Salmon): #B73B64
-
-*/
-
 :root {
-  --primary-color: #FE424D;
-  --secondary-color: #1AA6B7;
+  --primary-color: #00b7cc;
+  --secondary-color: #ff7e5a;
   --alt-color: #8D8C8A;
   --light-font-color: #F6F6F6;
   --dark-font-color: #363538;
@@ -23,10 +14,13 @@ Secondary Color (Fuchsia/Salmon): #B73B64
 
 body {
     background-image: url("../img/bg.jpg");
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: repeat;
     background-color: #FFFFFF;
     font-family: 'Muli', sans-serif;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     color: #101216;
 }
 
@@ -50,7 +44,7 @@ h3 {
 hr {
   border: 0;
   height: 3px;
-  background: #77b3b2;
+  background: var(--secondary-color);
 }
 
 a {
@@ -81,6 +75,47 @@ a:active {
     color: var(--primary-color);
 }
 
+.darker-links {
+  background-color: var(--dark-font-color);
+  opacity: 0.8;
+  padding: 0px 5px 0 5px;
+  border-radius: 10px;
+}
+
+.divider {
+  background-color: var(--primary-color);
+  height: 10px;
+}
+
+.float {
+  background-color: var(--dark-font-color);
+  width: 120px;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  opacity: 0.4;
+  transition-duration: 400ms;
+}
+
+.float:hover {
+  background-color: #0F0F0F;
+  opacity: 0.8;
+  width: 270px;
+  height: 50px;
+  border: solid 5px var(--secondary-color);
+  border-radius: 25px;
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+}
+
 .header-container {
   width: 100%;
   max-width: 1500px;
@@ -91,23 +126,32 @@ a:active {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
+  margin-top: 100px;
 }
 
 .parallax-header {
   width: 100%;
-  height: 700px;
-  background-image: url("../img/header-photo.jpg");
+  height: 1300px;
+  background-image: url("../img/cannonbeach.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
   background-attachment: fixed;
   top: 0;
-
+  transition-duration: 4000ms;
 }
+
+.parallax-header:hover {
+  background-size: 110%;
+  background-position: 0 70%;
+  transition-duration: 15000ms;
+}
+
 /* Fallback For Navbar */
 .page-header {
   display: flex;
 }
+
 /* Grid For Navbar */
 .page-header {
   display: grid;
@@ -145,15 +189,7 @@ a:active {
 
 .link {
   padding: 8px;
-  /* border: #000000 solid 1px; */
 }
-
-/* .navigation-links {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 5px;
-  padding: 15px;
-} */
 
 .menu-button {
   width: 100%;
@@ -203,14 +239,20 @@ button:hover, button:focus {
   display: grid;
   grid-template-columns: 13% 87%;
   background-color: #101216;
-  background-image: url("../img/trees.jpg");
+  background-image: url("../img/airport1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 120%;
+  background-size: contain;
+  background-size: 200%;
   background-position: center;
   background-attachment: fixed;
   padding: 3%;
   box-shadow: var(--box-shadow);
+  transition-duration: 20000ms;
+}
+
+.about-container:hover {
+  background-size: 100%;
+  transition-duration: 20000ms;
 }
 
 .about-container__item {
@@ -233,6 +275,8 @@ background: linear-gradient(87deg, rgba(255,255,255,0.6699054621848739) 0%, rgba
   background: var(--dark-font-color);
   text-align: center;
   box-shadow: var(--box-shadow);
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .section-title_text {
@@ -268,7 +312,7 @@ background: linear-gradient(87deg, rgba(255,255,255,0.8699054621848739) 0%, rgba
 
 .skill__image {
   margin: 10px;
-  width: 300px;
+  width: 180px;
 }
 
 .skill__image:hover {
@@ -353,7 +397,7 @@ background: linear-gradient(87deg, rgba(255,255,255,0.8699054621848739) 0%, rgba
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 50px;
 }
 
 .grid__item {
@@ -362,7 +406,8 @@ background: linear-gradient(0deg, rgba(255,255,255,0.9612219887955182) 0%, rgba(
   padding: 15px 15px 30px 15px;
   width: auto;
   border-left: 5px solid rgb(133, 133, 133);
-  border-top-right-radius: 25px;
+  border-radius: 15px;
+  overflow: hidden;
   box-shadow: var(--box-shadow);
 }
 
@@ -379,14 +424,25 @@ background: linear-gradient(0deg, rgba(255,255,255,0.9612219887955182) 0%, rgba(
 }
 
 .work-container {
-  padding: 30px;
+  padding: 0px;
   text-align: center;
   margin-bottom: 20px;
 }
 
+.project__image__container {
+  overflow: hidden;
+}
+
 .project__image {
   width: 100%;
+  transform: scale(1.0);
+  transition-duration: 800ms;
   box-shadow: var(--box-shadow);
+}
+
+.project__image:hover {
+  transform: scale(1.1);
+  transition-duration: 500ms;
 }
 
 .project-desc {
@@ -395,18 +451,25 @@ background: linear-gradient(0deg, rgba(255,255,255,0.9612219887955182) 0%, rgba(
 
 .contact-container {
   background-color: #101216;
-  background-image: url("../img/the-connector.jpg");
+  background-image: url("../img/portlandterminal.jpg");
   background-size: 100%;
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: top;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
   padding: 15% 5% 15% 5%;
+  transition-duration: 8000ms;
   box-shadow: var(--box-shadow);
+}
+.contact-container:hover {
+  background-size: 110%;
+  background-position: bottom;
+  transition-duration: 10000ms;
 }
 
 .contact-card {
   width: 66.6%;
+  max-width: 700px;
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,0.6495973389355743) 0%, rgba(13,13,13,0.473546918767507) 100%);
   box-shadow: var(--box-shadow);
@@ -414,6 +477,13 @@ background: linear-gradient(0deg, rgba(255,255,255,0.9612219887955182) 0%, rgba(
   text-align: center;
   border-radius: 15px;
   margin: 0 auto;
+  transition-duration: 1200ms;
+}
+
+.contact-card:hover {
+  width: 100.0%;
+  max-width: 1600px;
+  transition-duration: 800ms;
 }
 
 .contact-info {
@@ -478,13 +548,15 @@ textarea {
   transition-duration: 400ms;
 }
 
-/* Moved Media Queries to end, and condensed code */
-
 @media all and (min-width: 0px) and (max-width: 1700px) {
   .parallax-header {
     height: 450px;
     transition-duration: 1200ms;
-}
+  }
+  .float {
+    display: none;
+    transition-duration: 800ms;
+  }
 
 @media all and (min-width: 0px) and (max-width: 1150px) {
   .about-container {
@@ -553,4 +625,4 @@ textarea {
   .contact-card {
     width: 100%;
   }
-}
+}}
