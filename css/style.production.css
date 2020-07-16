@@ -157,6 +157,7 @@ a:active {
 .parallax-header {
   width: 100%;
   height: 1300px;
+  background-color: #0F0F0F;
   background-image: url("../img/cannonbeach.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -662,17 +663,12 @@ textarea {
 
 @media all and (min-width: 0px) and (max-width: 1700px) {
   .parallax-header {
-    height: 450px;
+    height: 900px;
     -webkit-transition-duration: 1200ms;
          -o-transition-duration: 1200ms;
             transition-duration: 1200ms;
   }
-  .float {
-    display: none;
-    -webkit-transition-duration: 800ms;
-         -o-transition-duration: 800ms;
-            transition-duration: 800ms;
-  }
+}
 
 @media all and (min-width: 0px) and (max-width: 1150px) {
   .about-container {
@@ -689,10 +685,21 @@ textarea {
             transition-duration: 1200ms;
   }
   .parallax-header {
-    height: 350px;
+    height: 550px;
+    background-position: top;
+    background-size: 100%;
     -webkit-transition-duration: 1200ms;
          -o-transition-duration: 1200ms;
             transition-duration: 1200ms;
+  }
+  .parallax-header:hover {
+    background-position: top;
+  }
+  .float {
+    display: none;
+    -webkit-transition-duration: 800ms;
+         -o-transition-duration: 800ms;
+            transition-duration: 800ms;
   }
 }
 
@@ -707,10 +714,15 @@ textarea {
     font-size: 24px;
   }
   .parallax-header {
-    height: 200px;
+    height: 400px;
+    background-position: top;
+    background-size: 120%;
     -webkit-transition-duration: 1200ms;
          -o-transition-duration: 1200ms;
             transition-duration: 1200ms;
+  }
+  .parallax-header:hover {
+    background-position: top;
   }
   .page-header {
     -ms-grid-columns: 100%;
@@ -756,4 +768,4 @@ textarea {
   .contact-card {
     width: 100%;
   }
-}}
+}
