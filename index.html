@@ -31,7 +31,18 @@
         </div>
         <nav class="main-navigation">
             <section class="navigation-links">
-                <a href="#" role="menuitem" class="link">Home</a> <a href="#aboutme" role="menuitem" class="link">About Me</a> <a href="#mywork" role="menuitem" class="link">My Work</a> <a href="#contact" role="menuitem" class="link">Contact</a> 
+                <div class="menu-links">
+                    <a href="#" role="menuitem" class="link">Home</a>
+                </div>
+                <div class="menu-links">
+                    <a href="#aboutme" role="menuitem" class="link">About Me</a>
+                </div>
+                <div class="menu-links">
+                    <a href="#mywork" role="menuitem" class="link">My Work</a>
+                </div>
+                <div class="menu-links">
+                    <a href="#contact" role="menuitem" class="link">Contact</a>
+                </div>   
             </section>
         </nav>
     </header>
@@ -44,11 +55,11 @@
                 </div>
                 <div class="profile__item-container">
                     <div class="profile__item">
-                        <h1 class="animate__animated animate__backInRight">Web Developer | Designer<br>Creative Professional | Minimalist</h1>
+                        <h1>Web Developer | Designer<br>Creative Professional | Minimalist</h1>
                         </p>
                     </div>
-                    <a name="aboutme"></a>
-                </div>
+                        <a name="aboutme"></a>
+                    </div>
             </div>
         </section>
         <section class="about-container">
@@ -64,7 +75,7 @@
                 <p>   
                     <h2>Web Design + Development</h2>
 
-                    I have performed both freelance and salaried/hourly work in web design and development. I studied Frontend Web Development at CareerFoundry and am currently studying to be a Full-Stack Developer. I am highly skilled at writing HTML and CSS to design beautiful, responsive and mobile friendly websites that deliver a product that meets the unique needs of my clients. I am also skilled at delivering WordPress websites for clients that desire their websites to be non-tech friendly and easily updatable by the client such as the case with blogs. I see websites as not only useful tools for accomplished desired tasks but also as works of visual art that should be enjoyable and easy to use for anyone. 
+                    I have performed both freelance and salaried/hourly work in web design and development. I studied Frontend Web Development at CareerFoundry and am currently studying to be a Full-Stack Developer. I am highly skilled at writing HTML and CSS to design beautiful, responsive and mobile friendly websites that deliver a product that meets the unique needs of my clients. I am also skilled at delivering WordPress websites for clients that desire their websites to be non-tech friendly and easily updatable by the client such as the case with blogs. I see websites as not only useful tools for accomplishing desired tasks but also as works of visual art that should be enjoyable and easy to use for anyone. 
 
                 </p>
                 <p>
@@ -82,12 +93,11 @@
                     <h2>Writing + Copywriting + Social Media</h2>
 
                     I enjoy writing and blogging as both a hobby and a line of work. I have 15 months of recent copywriting experience as part of a sales team for both print and digital/social media marketing. I am experienced in creating graphical and written content for Facebook, Twitter, LinkedIn, Instagram, and other digital platforms as well as for physical (USPS, EDDM) and email mass marketing platforms such as Robly. I run my own blog, <a href="http://backwoodszen.com/" class="darker-links" target="new">BackwoodsZen.com</a>, discussing various topics about minimalism and mindfulness, as well as its corresponding social media platforms.
-
                 </p>
                 <!-- This writeup is currently incomplete -->
             </div>
         </section>
-<p></p>
+        <p></p>
         <section class="section-title">
             <div class="section-title_text">
                 <h3>Skills</h3>
@@ -201,36 +211,44 @@
             </div>
             <!-- Form below temporarily commented out until full functionality is added -->
             <!-- <div class="form-container">
-                <form action="submit" method="post" id="contact-form" class="styled-form">
-                        <div>
-                                <label class="standard-label" for="contact-email">E-mail: </label>
-                                <input type="email" id="contact-email" required>  
-                        </div>
-                        <br>
-                        <div>
-                            <label class="standard-label" for="contact-tel">Telephone: </label>
-                            <input type="tel" id="contact-tel" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label class="standard-label" for="contact-message">Message: </label>
-                            <textarea maxlength="1000" id="contact-message" required></textarea>
-                        </div>
-                        <br>
-                        <div>
-                            <button type="submit" class="button" value="Send message">Send message</button>
-                        </div>
-                </form> -->
-            </div>
+                <div class="sub-form-container">
+                    <form action="submit" method="post" id="contact-form" class="styled-form">
+                            <div>
+                                    <label class="standard-label" for="contact-email">E-mail: </label>
+                                    <input type="email" id="contact-email" required>  
+                            </div>
+                            <br>
+                            <div>
+                                <label class="standard-label" for="contact-tel">Telephone: </label>
+                                <input type="tel" id="contact-tel" required>
+                            </div>
+                            <br>
+                            <div>
+                                <label class="standard-label" for="contact-message">Message: </label>
+                                <textarea maxlength="1000" id="contact-message" required></textarea>
+                            </div>
+                            <br>
+                            <div>
+                                <button type="submit" class="button" value="Send message">Send message</button>
+                            </div>
+                    </form>
+                </div>
+            </div> -->
         </div>
     </section>
     <div class="footer-container">
         <footer class="page-footer">
             <h4>Find me on</h4>
             <div class="social-media">
-                <a href="https://github.com/nathankendrick" target="_blank"><img src="img/github-black.svg" class="social-icons" alt="GitHub"></a>
-                <a href="https://www.facebook.com/nathankendrickdeveloper/" target="_blank"><img src="img/facebook-blue.svg"  class="social-icons" alt="Facebook"></a>
-                <a href="https://www.linkedin.com/in/nathanbkendrick/" target="_blank"><img src="img/linkedin-blue.svg"  class="social-icons" alt="LinkedIn"></a>
+                <div class="social-links">
+                    <a href="https://github.com/nathankendrick" target="_blank"><img src="img/github-black.svg" class="social-icons" alt="GitHub"></a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/nathankendrickdeveloper/" target="_blank"><img src="img/facebook-blue.svg"  class="social-icons" alt="Facebook"></a> 
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/nathanbkendrick/" target="_blank"><img src="img/linkedin-blue.svg"  class="social-icons" alt="LinkedIn"></a>
+                </div>  
         </div>
         </footer>
     </div>
