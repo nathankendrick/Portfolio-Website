@@ -621,6 +621,32 @@ textarea {
   transition-duration: 400ms;
 }
 
+
+#toTop {
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 99;
+  border: 1px solid white;
+  outline: none; 
+  background: rgba(255, 255, 255, 0.3);
+  background: linear-gradient(180deg, rgba(0,0,0,0.8995973389355743) 0%, rgba(13,13,13,0.773546918767507) 20%);
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 5px;
+  font-size: 25px;
+  transition: 400ms;
+}
+
+#toTop:hover {
+  background-color: #555;
+  transition: 400ms;
+}
+
 @media all and (min-width: 0px) and (max-width: 1700px) {
   .parallax-header {
     height: 900px;

@@ -733,6 +733,38 @@ textarea {
           transition-duration: 400ms;
 }
 
+
+#toTop {
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 99;
+  border: 1px solid white;
+  outline: none; 
+  background: rgba(255, 255, 255, 0.3);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8995973389355743)), color-stop(20%, rgba(13,13,13,0.773546918767507)));
+  background: -o-linear-gradient(top, rgba(0,0,0,0.8995973389355743) 0%, rgba(13,13,13,0.773546918767507) 20%);
+  background: linear-gradient(180deg, rgba(0,0,0,0.8995973389355743) 0%, rgba(13,13,13,0.773546918767507) 20%);
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 5px;
+  font-size: 25px;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms;
+}
+
+#toTop:hover {
+  background-color: #555;
+  -webkit-transition: 400ms;
+  -o-transition: 400ms;
+  transition: 400ms;
+}
+
 @media all and (min-width: 0px) and (max-width: 1700px) {
   .parallax-header {
     height: 900px;
