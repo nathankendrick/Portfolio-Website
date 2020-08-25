@@ -428,7 +428,7 @@ background: linear-gradient(87deg, rgba(255,255,255,0.8699054621848739) 0%, rgba
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 }
 
@@ -453,6 +453,7 @@ background: linear-gradient(0deg, rgba(255,255,255,0.9612219887955182) 0%, rgba(
 
 .work-links:hover {
   border: 1px solid var(--primary-color);
+  opacity: 0.7;
 }
 
 .work-container {
@@ -479,6 +480,8 @@ background: linear-gradient(0deg, rgba(255,255,255,0.9612219887955182) 0%, rgba(
 
 .project-desc {
   text-align: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .contact-container {
