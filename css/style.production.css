@@ -518,11 +518,19 @@ background: linear-gradient(0deg, rgba(255,255,255,0.9612219887955182) 0%, rgba(
   border-radius: 10px;
   border: 1px solid var(--dark-font-color);
   color: #FFFFFF;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
 }
 
 .work-links:hover {
   border: 1px solid var(--primary-color);
   opacity: 0.7;
+  -webkit-transition-duration: 400ms;
+       -o-transition-duration: 400ms;
+          transition-duration: 400ms;
 }
 
 .work-container {
@@ -790,6 +798,12 @@ textarea {
     -webkit-transition-duration: 1200ms;
          -o-transition-duration: 1200ms;
             transition-duration: 1200ms;
+  }
+  .work-links {
+    font-size: 14px;
+    -webkit-transition-duration: 400ms;
+         -o-transition-duration: 400ms;
+            transition-duration: 400ms;
   }
   .parallax-header {
     height: 550px;
